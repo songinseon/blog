@@ -40,21 +40,30 @@ text-align:right;
 display:block;
 }
 
+.con {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.con {
+  width:1200px;
+}
+
 .top-bar {
 border-radius:8px;
 background-color:#770000;
 color:gold;
 }
 
-.top-bar > div:first-child {
+.top-bar > .con > div:first-child {
 width:240px;
 }
 
-.top-bar > div:nth-child(2) {
+.top-bar > .con > div:nth-child(2) {
 width:calc(100% - 240px - 650px);
 }
 
-.top-bar > div:last-child {
+.top-bar > .con > div:last-child {
 width:650px;
 }
 

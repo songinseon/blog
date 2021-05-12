@@ -51,6 +51,7 @@ display:block;
 
 /* 탑바 커스텀 시작 */
 .top-bar {
+margin-bottom:30px;
 border-radius:8px;
 background-color:#770000;
 color:gold;

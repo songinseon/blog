@@ -49,6 +49,7 @@ display:block;
   width:1200px;
 }
 
+/* 탑바 커스텀 시작 */
 .top-bar {
 border-radius:8px;
 background-color:#770000;
@@ -116,4 +117,15 @@ text-align:center;
 
 .top-bar__menu-box-1 > ul > li:hover > ul {
 display:block;
+}
+/* 탑바 커스텀 끝 */
+
+/* work-list-boxist */
+.work-list-box > ul > li {
+  width:25%;
+}
+
+.work-list-box > ul > li > img {
+  width:100%;
+  display:block;
 }

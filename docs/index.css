@@ -49,9 +49,14 @@ display:block;
   width:1200px;
 }
 
+.img-box > img {
+  width: 100%;
+  display: block;
+}
+
 /* 탑바 커스텀 시작 */
 .top-bar {
-margin-bottom:30px;
+margin-bottom:20px;
 border-radius:8px;
 background-color:#770000;
 color:gold;
@@ -124,9 +129,10 @@ display:block;
 /* work-list-boxist */
 .work-list-box > ul > li {
   width:25%;
+  padding:0 10px;
 }
 
-.work-list-box > ul > li > img {
-  width:100%;
-  display:block;
+.work-list-box > ul {
+  margin-left: -10px;
+  margin-right:- 10px;
 }

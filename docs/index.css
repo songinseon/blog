@@ -127,12 +127,82 @@ display:block;
 /* 탑바 커스텀 끝 */
 
 /* work-list-boxist */
+
+.section-0 {
+  margin-top:20px;
+}
+
+.section-0 img {
+  border-radius: 15px;
+}
+
 .work-list-box > ul > li {
-  width:25%;
+  width:calc(100% / 4);
   padding:0 10px;
+  margin-top:20px;
+  cursor: pointer;
 }
 
 .work-list-box > ul {
   margin-left: -10px;
-  margin-right:- 10px;
+  margin-right:-10px;
+}
+
+.work-list-box > ul > li > div > .work-name {
+  margin-top:5px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.work-list-box > ul > li > div > .work-date-period {
+  margin-top:5px;  
+  text-align:center;
+  color:#565656;
+}
+
+.work-list-box > ul > li > div > .img-box {
+  position:relative;
+  overflow:hidden;
+}
+
+.work-list-box > ul > li > div > .img-box > .addi {
+  border:2px solid white;
+  color:white;
+  padding:10px;
+  border-radius:10px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
+  font-weight:bold;
+  opacity:0;
+  transition: opacity 1s;
+}
+
+.work-list-box > ul > li:hover > div > .img-box > .addi {
+  opacity:1;
+}
+
+.work-list-box > ul > li > div > .img-box > .bg {
+  background-color:rgba(0,0,0,0);
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  transition:background-color 1s;
+}
+
+.work-list-box > ul > li:hover > div > .img-box > .bg {
+  background-color:rgba(0,0,0,0.5);
+}
+
+.work-list-box > ul > li > div > .img-box > img {
+  transition: transform 1s; 
+  z-index:-1; 
+  position:relative; 
+}
+
+.work-list-box > ul > li:hover > div > .img-box > img {
+  transform:scale(1.4);
 }
